@@ -24,7 +24,7 @@ jobs:
 
       - name: Write Google credentials
         run: |
-          echo "${{ secrets.GSHEETS_KEY }}" > credentials.json
+          echo '${{ secrets.GSHEETS_KEY }}' > credentials.json
 
       - name: Run scraper
         run: python scraper.py
