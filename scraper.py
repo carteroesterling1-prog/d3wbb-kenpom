@@ -100,7 +100,7 @@ def main():
 
     all_data = []
     for _, row in team_ids.iterrows():
-        team_id = row["TEAM_ID"]
+        team_id = row["NCAA_ID"]
         team_name = row.get("TEAM_NAME", "Unknown")
 
         try:
